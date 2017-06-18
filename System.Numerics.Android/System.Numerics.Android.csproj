@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F42A1159-7DFD-4C31-8578-36B5253FA4CF}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Numerics</RootNamespace>
+    <AssemblyName>System.Numerics.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Sources\BaselineExcludes.lst.cs">
+      <Link>Sources\BaselineExcludes.lst.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\number.cs">
+      <Link>Sources\number.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\SR.cs">
+      <Link>Sources\SR.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System.Numerics.CLR.lst.cs">
+      <Link>Sources\System.Numerics.CLR.lst.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System.Numerics.dll.Triaged.lst.cs">
+      <Link>Sources\System.Numerics.dll.Triaged.lst.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\BigInteger.cs">
+      <Link>Sources\System\Numerics\BigInteger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\BigIntegerBuilder.cs">
+      <Link>Sources\System\Numerics\BigIntegerBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\BigNumber.cs">
+      <Link>Sources\System\Numerics\BigNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Complex.cs">
+      <Link>Sources\System\Numerics\Complex.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\HashCodeHelper.cs">
+      <Link>Sources\System\Numerics\HashCodeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\JITIntrinsicAttribute.cs">
+      <Link>Sources\System\Numerics\JITIntrinsicAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Matrix3x2.cs">
+      <Link>Sources\System\Numerics\Matrix3x2.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Matrix4x4.cs">
+      <Link>Sources\System\Numerics\Matrix4x4.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\NumericsHelpers.cs">
+      <Link>Sources\System\Numerics\NumericsHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Plane.cs">
+      <Link>Sources\System\Numerics\Plane.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Quaternion.cs">
+      <Link>Sources\System\Numerics\Quaternion.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector2.cs">
+      <Link>Sources\System\Numerics\Vector2.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector2_Intrinsics.cs">
+      <Link>Sources\System\Numerics\Vector2_Intrinsics.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector3.cs">
+      <Link>Sources\System\Numerics\Vector3.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector3_Intrinsics.cs">
+      <Link>Sources\System\Numerics\Vector3_Intrinsics.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector4.cs">
+      <Link>Sources\System\Numerics\Vector4.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector4_Intrinsics.cs">
+      <Link>Sources\System\Numerics\Vector4_Intrinsics.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\System\Numerics\Vector_Operations.cs">
+      <Link>Sources\System\Numerics\Vector_Operations.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

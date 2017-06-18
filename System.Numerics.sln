@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{C757E311-7433-4C8E-88B4-B3240E35E61C}"
+	ProjectSection(SolutionItems) = preProject
+		Sources\BaselineExcludes.lst.cs = Sources\BaselineExcludes.lst.cs
+		Sources\number.cs = Sources\number.cs
+		Sources\SR.cs = Sources\SR.cs
+		Sources\System.Numerics.CLR.lst.cs = Sources\System.Numerics.CLR.lst.cs
+		Sources\System.Numerics.dll.Triaged.lst.cs = Sources\System.Numerics.dll.Triaged.lst.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System", "System", "{D151A352-02DF-47F1-ADE4-B2B9883712EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Numerics", "Numerics", "{D7D9076A-0C7F-41D1-9C4A-DE3934CC771E}"
+	ProjectSection(SolutionItems) = preProject
+		Sources\System\Numerics\BigInteger.cs = Sources\System\Numerics\BigInteger.cs
+		Sources\System\Numerics\BigIntegerBuilder.cs = Sources\System\Numerics\BigIntegerBuilder.cs
+		Sources\System\Numerics\BigNumber.cs = Sources\System\Numerics\BigNumber.cs
+		Sources\System\Numerics\Complex.cs = Sources\System\Numerics\Complex.cs
+		Sources\System\Numerics\HashCodeHelper.cs = Sources\System\Numerics\HashCodeHelper.cs
+		Sources\System\Numerics\JITIntrinsicAttribute.cs = Sources\System\Numerics\JITIntrinsicAttribute.cs
+		Sources\System\Numerics\Matrix3x2.cs = Sources\System\Numerics\Matrix3x2.cs
+		Sources\System\Numerics\Matrix4x4.cs = Sources\System\Numerics\Matrix4x4.cs
+		Sources\System\Numerics\NumericsHelpers.cs = Sources\System\Numerics\NumericsHelpers.cs
+		Sources\System\Numerics\Plane.cs = Sources\System\Numerics\Plane.cs
+		Sources\System\Numerics\Quaternion.cs = Sources\System\Numerics\Quaternion.cs
+		Sources\System\Numerics\Vector2.cs = Sources\System\Numerics\Vector2.cs
+		Sources\System\Numerics\Vector2_Intrinsics.cs = Sources\System\Numerics\Vector2_Intrinsics.cs
+		Sources\System\Numerics\Vector3.cs = Sources\System\Numerics\Vector3.cs
+		Sources\System\Numerics\Vector3_Intrinsics.cs = Sources\System\Numerics\Vector3_Intrinsics.cs
+		Sources\System\Numerics\Vector4.cs = Sources\System\Numerics\Vector4.cs
+		Sources\System\Numerics\Vector4_Intrinsics.cs = Sources\System\Numerics\Vector4_Intrinsics.cs
+		Sources\System\Numerics\Vector_Operations.cs = Sources\System\Numerics\Vector_Operations.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Numerics.Android", "System.Numerics.Android\System.Numerics.Android.csproj", "{F42A1159-7DFD-4C31-8578-36B5253FA4CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Numerics.iOS", "System.Numerics.iOS\System.Numerics.iOS.csproj", "{965415A0-74C1-4A9C-9EF0-E4467B0E05C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F42A1159-7DFD-4C31-8578-36B5253FA4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42A1159-7DFD-4C31-8578-36B5253FA4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42A1159-7DFD-4C31-8578-36B5253FA4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42A1159-7DFD-4C31-8578-36B5253FA4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965415A0-74C1-4A9C-9EF0-E4467B0E05C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965415A0-74C1-4A9C-9EF0-E4467B0E05C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965415A0-74C1-4A9C-9EF0-E4467B0E05C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965415A0-74C1-4A9C-9EF0-E4467B0E05C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D151A352-02DF-47F1-ADE4-B2B9883712EB} = {C757E311-7433-4C8E-88B4-B3240E35E61C}
+		{D7D9076A-0C7F-41D1-9C4A-DE3934CC771E} = {D151A352-02DF-47F1-ADE4-B2B9883712EB}
+	EndGlobalSection
+EndGlobal
